@@ -12,6 +12,6 @@ public class AopTestController {
     @GetMapping("/aop")
     @MyFirstAop()
     public String test() {
-        return "HELLO";
+        return "HELLO DEVTOOLS THEN MANNUAL BUILD PROJECT";
     }
 }
