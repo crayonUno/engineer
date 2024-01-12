@@ -70,10 +70,12 @@ public class MyFirstAspect {
     public Object doAround(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
         //开始时间
         long startTime = System.currentTimeMillis();
+        logger.info("Around starttime :{}", startTime);
         Object result = proceedingJoinPoint.proceed();
         // 打印出参
         logger.info("Response Args  : {}", new ObjectMapper().writeValueAsString(result));
         // 执行耗时
+        logger.info("Around overtime :{}", System.currentTimeMillis());
         logger.info("Time-Consuming : {} ms", System.currentTimeMillis() - startTime);
         return result;
     }
