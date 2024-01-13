@@ -47,6 +47,14 @@
             <artifactId>guava</artifactId>
             <version>30.1-jre</version>
         </dependency>
+
+<!--        热部署，参考链接；https://xie.infoq.cn/article/741567d515e090e2c525cda3d-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <!--设置 optional 为 true，是避免大家微服务项目父子项目依赖继承冲突。-->
+            <optional>true</optional>
+        </dependency>
     </dependencies>
 
     <build>
