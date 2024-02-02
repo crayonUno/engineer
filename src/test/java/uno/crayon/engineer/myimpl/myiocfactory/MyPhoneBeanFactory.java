@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-public class ApiTest {
+public class MyPhoneBeanFactory {
     @Test
     public void test_BeanFactory() {
         //1.创建bean工厂(同时完成了加载资源、创建注册单例bean注册器的操作)
