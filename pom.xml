@@ -76,6 +76,17 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- 服务治理，限流 -->
+        <dependency>
+            <groupId>uno.crayon.engineer2</groupId>
+            <artifactId>ratelimiter-spring-boot-starter</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
